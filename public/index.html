@@ -34,7 +34,7 @@ body, html {
 .w3-hover-opacity {cursor: pointer;}
 
 /* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
+@media only screen and (max-device-width: 1920px) {
     .bgimg-1, .bgimg-2, .bgimg-3 {
         background-attachment: scroll;
     }
@@ -99,7 +99,7 @@ body, html {
 
             <div class="user_login">
                 <form>
-                    <label>Email / Username</label>
+                    <label>Username</label>
                     <input type="text" />
                     <br />
 
@@ -123,22 +123,21 @@ body, html {
 
             <div class="user_register">
                 <form>
-                    <label>Full Name</label>
-                    <input type="text" />
-                    <br />
-
-                    <label>Email Address</label>
+                    <label name="email">Email Address</label>
                     <input type="email" />
                     <br />
 
-                    <label>Password</label>
+                    <label name="username">Username</label>
+                    <input type="text" />
+                    <br />
+
+                    <label name="password">Password</label>
                     <input type="password" />
                     <br />
 
-                    <div class="checkbox">
-                        <input id="send_updates" type="checkbox" />
-                        <label for="send_updates">Send me occasional email updates</label>
-                    </div>
+                    <label name="password">Repeat Password</label>
+                    <input type="password" />
+                    <br />
 
                     <div class="action_btns">
                         <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
@@ -222,30 +221,6 @@ body, html {
  
 <!-- Add Google Maps -->
 <script>
-function myMap()
-{
-  myCenter=new google.maps.LatLng(41.878114, -87.629798);
-  var mapOptions= {
-    center:myCenter,
-    zoom:12, scrollwheel: false, draggable: false,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
-  var marker = new google.maps.Marker({
-    position: myCenter,
-  });
-  marker.setMap(map);
-}
-
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-
 // Change style of navbar on scroll
 window.onscroll = function() {myFunction()};
 function myFunction() {
