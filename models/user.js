@@ -1,13 +1,17 @@
 module.exports = function(sequelize, DataTypes) {
   var User = sequelize.define("User", {
-    firstName: DataTypes.STRING,
-    lastName: DataTypes.STRING,
-    username: DataTypes.STRING,
-    email: DataTypes.STRING,
-    profession: DataTypes.STRING,
-    yeasrsExperience: DataTypes.INTEGER,
-    skillLevel: DataTypes.INTEGER,
-    interest: DataTypes.STRING
-  });
+    username:DataTypes.STRING,
+    password:DataTypes.STRING
+  },
+  {
+    classMethods: {
+      associate: function(models) {       
+          user.hasMany(models.answer,{             
+            onDelete: "cascade"
+                     })
+  }
+    }
+    });
+
   return User;
 };
