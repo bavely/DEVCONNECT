@@ -2,7 +2,7 @@ module.exports = function(sequelize, DataTypes) {
 	var Answer = sequelize.define("Answer", {
         firstName:DataTypes.STRING,
         lastName:DataTypes.STRING,
-		phone:DataTypes.int,
+		phone:DataTypes.INTEGER,
         state:DataTypes.STRING,
         city:DataTypes.STRING,
         frontbackend:DataTypes.STRING,
