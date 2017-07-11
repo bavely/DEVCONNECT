@@ -45,7 +45,7 @@ h1 {
 		background: #000;
 		display: none;
 }
-
+/*
 .popupContainer {
 		position: absolute;
 		width: 330px;
@@ -53,7 +53,9 @@ h1 {
 		left: 45%;
 		top: 60px;
 		background: #FFF;
-}
+}*/
+
+
 
 #modal_trigger {
 		margin: 40px auto;

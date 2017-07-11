@@ -2,6 +2,7 @@
 <html>
 <title>Home | DevConnect</title>
 <meta charset="UTF-8">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
@@ -52,7 +53,7 @@ body, html {
     <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-hover-red"><i class="fa fa-book"></i> ABOUT</a>
     <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-red"><i class="fa fa-envelope"></i> CONTACT</a>
     <a href="#modal" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red"><i class="fa fa-user"></i> REGISTER</a>
-    <a href="#modal" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red"><i class="fa fa-user"></i> LOGIN</a>
+    <a  class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red logIn"><i class="fa fa-user"></i> LOGIN</a>
   </div>
 
   <!-- small navbar -->
@@ -65,7 +66,7 @@ body, html {
 <!-- ------------------------------------ -->
 
   <div class="container">
-      <div id="modal" class="popupContainer" style="display:none;">
+      <div id="modal" class="popupContainer modal "  tabindex="-1" role="dialog" style="display:none;>
         <header class="popupHeader">
             <span class="header_title">Login</span>
             <span class="modal_close"><i class="fa fa-times"></i></span>
@@ -242,6 +243,8 @@ function toggleFunction() {
     }
 }
 </script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script type="text/javascript" src="assets/javascript/logres.js"></script>
 <!--
 To use this code on your website, get a free API key from Google.
