@@ -17,7 +17,9 @@ module.exports = function(app){
 
     //Get all USERS info (Name,Location .etc)
     app.get("api/user", function(req,res){
-
+        db.Answer.findAll({}).then(function(data){
+            console.log(data);
+           return res.json(data)
         //JSON of all users
 
     })
