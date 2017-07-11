@@ -1,4 +1,6 @@
 var path = require("path");
+var db = require("../models");
+
 
 module.exports = function(app){
 
@@ -7,7 +9,15 @@ module.exports = function(app){
     });
         
     app.get("/user/:id", function(req,res){
-        req.param.id
-        res.sendFile(path.join(__dirname + "../public/profile.html"))
-    })
+        db.User.findOne({
+            where: {
+                id: req.params.id
+            }
+        }).then(function(userdata){
+            res.render("profile",userdata )
+        })
+        
+    });
+
+    
 };
