@@ -1,492 +1,404 @@
 #totalNav {
-	background-color: rgba(0,0,0,.5);
-	text-decoration-color: black;
+  background-color: rgba(0,0,0,.5);
+  text-decoration-color: black;
 }
 
 .w3-bar-item {
-	color: white;
+  color: white;
 }
 
 .paragraphs {
-	text-align: justify;
+  text-align: justify;
 }
 
 #home {
-	width: 100%;
+  width: 100%;
 }
 
 #about {
-	padding-bottom: 0px;
+  padding-bottom: 0px;
 }
 
 #profilemiddlecolumn {
-	height: 600px;
-}
-
-body {
-		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 14px;
-		color: #666;
-}
-
-h1 {
-		text-align: center;
-		margin-bottom: 0;
-		margin-top: 60px;
-}
-
-#lean_overlay {
-		position: fixed;
-		z-index: 100;
-		top: 0px;
-		left: 0px;
-		height: 100%;
-		width: 100%;
-		background: #000;
-		display: none;
-}
-
-.popupContainer {
-		position: absolute;
-		width: 330px;
-		height: auto;
-		left: 45%;
-		top: 60px;
-		background: #FFF;
-}
-
-#modal_trigger {
-		margin: 40px auto;
-		width: 200px;
-		display: block;
-		border: 1px solid #DDD;
-		border-radius: 4px;
-}
-
-.btn {
-		padding: 10px 20px;
-		background: #F4F4F2;
-}
-
-.btn_red {
-		background: #ED6347;
-		color: #FFF;
-}
-
-.btn:hover {
-		background: #E4E4E2;
-}
-
-.btn_red:hover {
-		background: #C12B05;
-}
-
-a.btn {
-		color: #666;
-		text-align: center;
-		text-decoration: none;
-}
-
-a.btn_red {
-		color: #FFF;
-}
-
-.one_half {
-		width: 50%;
-		display: block;
-		float: left;
-}
-
-.one_half.last {
-		width: 45%;
-		margin-left: 5%;
-}
-
-
-.popupHeader {
-		font-size: 16px;
-		text-transform: uppercase;
-}
-
-.popupHeader {
-		background: #F4F4F2;
-		position: relative;
-		padding: 10px 20px;
-		border-bottom: 1px solid #DDD;
-		font-weight: bold;
-}
-
-.popupHeader .modal_close {
-		position: absolute;
-		right: 0;
-		top: 0;
-		padding: 10px 15px;
-		background: #E4E4E2;
-		cursor: pointer;
-		color: #aaa;
-		font-size: 16px;
-}
-
-.popupBody {
-		padding: 20px;
-}
-
-
-.social_login {}
-
-.social_login .social_box {
-		display: block;
-		clear: both;
-		padding: 10px;
-		margin-bottom: 10px;
-		background: #F4F4F2;
-		overflow: hidden;
-}
-
-.social_login .icon {
-		display: block;
-		width: 10px;
-		padding: 5px 10px;
-		margin-right: 10px;
-		float: left;
-		color: #FFF;
-		font-size: 16px;
-		text-align: center;
-}
-
-.social_login .fb .icon {
-		background: #3B5998;
-}
-
-.social_login .google .icon {
-		background: #DD4B39;
-}
-
-.social_login .icon_title {
-		display: block;
-		padding: 5px 0;
-		float: left;
-		font-weight: bold;
-		font-size: 16px;
-		color: #777;
-}
-
-.social_login .social_box:hover {
-		background: #E4E4E2;
-}
-
-.centeredText {
-		text-align: center;
-		margin: 20px 0;
-		clear: both;
-		overflow: hidden;
-		text-transform: uppercase;
-}
-
-.action_btns {
-		clear: both;
-		overflow: hidden;
-}
-
-.action_btns a {
-		display: block;
-}
-
-.user_login {
-		display: none;
-}
-
-.user_login label {
-		display: block;
-		margin-bottom: 5px;
-}
-
-.user_login input[type="text"],
-.user_login input[type="email"],
-.user_login input[type="password"] {
-		display: block;
-		width: 90%;
-		padding: 10px;
-		border: 1px solid #DDD;
-		color: #666;
-}
-
-.user_login input[type="checkbox"] {
-		float: left;
-		margin-right: 5px;
-}
-
-.user_login input[type="checkbox"]+label {
-		float: left;
-}
-
-.user_login .checkbox {
-		margin-bottom: 10px;
-		clear: both;
-		overflow: hidden;
-}
-
-.forgot_password {
-		display: block;
-		margin: 20px 0 10px;
-		clear: both;
-		overflow: hidden;
-		text-decoration: none;
-		color: #ED6347;
-}
-
-.user_register {
-		display: none;
-}
-
-.user_register label {
-		display: block;
-		margin-bottom: 5px;
-}
-
-.user_register input[type="text"],
-.user_register input[type="email"],
-.user_register input[type="password"] {
-		display: block;
-		width: 90%;
-		padding: 10px;
-		border: 1px solid #DDD;
-		color: #666;
-}
-
-.user_register input[type="checkbox"] {
-		float: left;
-		margin-right: 5px;
-}
-
-.user_register input[type="checkbox"]+label {
-		float: left;
-}
-
-.user_register .checkbox {
-		margin-bottom: 10px;
-		clear: both;
-		overflow: hidden;
+  height: 600px;
 }
 
 #success_message{ display: none;}
 
 #surveycontainer {
-	padding-top: 50px;
-	text-align: center;
+  padding-top: 50px;
+  text-align: center;
+}
+
+#modal2contain {
+  width: 500px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+}
+
+
+
+.labelFont {
+  color: white;
 }
 
 .col-md-4 {
-	padding-bottom: 10px;
+  padding-bottom: 10px;
 }
-/*PROFILE IMAGE*/
 
-$blue: #2B2F3F
-$pinkish: #C68587
-$reddish: #BA4773
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
 
-html 
-  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/176026/noise.png)
-  background-color: #fff
-  
-.avatar
-  float: left
-  display: inline-block
-  overflow: hidden
-  width: 10vw
-  height: 10vw
-  border-radius: 100%
-  background: $pinkish
-  border: 6px solid #B3C9CB
-  background-image: url(https://scontent-vie1-1.cdninstagram.com/hphotos-ash/t51.2885-19/10932224_821299211264682_1488190390_a.jpg)
-  background-size: cover
-  background-position: 50% 25%
-  -webkit-transition: border 0.5s linear
-  -moz-transition: border 0.5s linear
-  -o-transition: border 0.5s linear
-  transition: border 0.5s linear
-    
-  &:after
-    content: ""
-    position: absolute
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(240,227,199,1)), color-stop(100%,rgba(107,202,180,1)))
-    width: 10vw
-    height: 10vw
-    border-radius: 100%
-    border: 1px solid white
-    left: 4px
-    top: 4px
-    opacity: 0
-    -webkit-transition: opacity 0.3s linear
-    -moz-transition: opacity 0.3s linear
-    -o-transition: opacity 0.3s linear
-    transition: opacity 0.3s linear
-    cursor: pointer
-    -webkit-transform-style: preserve-3d
-      
-.avatar:hover:after
-  opacity: 0.7
-.avatar.open:hover:after
-  opacity: 0
-.container
-  text-align: center
-  left: 50%
-  -webkit-transform: translate3d(-50%,-50%,0)
-  -moz-transition: translate3d(-50%,-50%,0)
-  -o-transition: translate3d(-50%,-50%,0)
-  transition: translate3d(-50%,-50%,0)
-  position: absolute
-  top: 50%
-#camera
-  -webkit-transform: scale(0.4)
-  position: relative
-  z-index: 9999
-  cursor: pointer
-  top: 18%
-  overflow: hidden
+/* Set a style for all buttons */
+button {
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    /*padding: 14px 20px;*/
+    /*margin: 8px 0;*/
+    margin-left: 15px;
+    margin top: 15px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+}
 
-#circle
-  -webkit-transform: scale(0.75)
-  -webkit-transform-origin: 50% 50%
-  -webkit-transition: all 0.3s linear
-  stroke-dashoffset: 33px
-  stroke-dasharray: 33px
-#cameraFrame
-  -webkit-transition: all 0.5s linear
-  stroke-dashoffset: 72px
-  stroke-dasharray: 72px
-#plus
-  -webkit-transition: all 0.3s linear
-  stroke-dashoffset: 5px
-  stroke-dasharray: 5px
-  
-#fileUpload
-  overflow: hidden
-  position: absolute
-  width: 70px
-  padding: 10px
-  opacity: 0
-  left: 50%
-  top: 70%
-  -webkit-transform: translate3d(-50%,-50%,0)
-  z-index: 9999
-  -webkit-transition: 250ms cubic-bezier(.7,0,.36,1)
-  transition: 250ms cubic-bezier(.7,0,.36,1)
-  &:focus
-    outline: none
-    background: transparent
-#openModal   
-  width: 100%
-  height: 100%
-  position: absolute
-  left: 0
-  top: 0
-  border-radius: 100%
-  -webkit-transform: scale(0)
-  z-index: 8888
-  -webkit-transition: 250ms cubic-bezier(.7,0,.36,1)
-  transition: 250ms cubic-bezier(.7,0,.36,1)
-  -webkit-transition-delay: 250ms
-  transition-delay: 250ms
-  background-color: rgba(255,255,255,0.9)
-  
-#openModal
-  > span
-    font-family: raleway
-    font-size: 1.2vw
-    top: 40%
-    position: absolute
-    left: 50%
-    white-space: nowrap
-    -webkit-transform: translate3d(-50%,0,0)
-    color: rgba(0,0,0,0.7)
-.separatorLine
-  margin-top: 15px
-  width: 300%
-  position: absolute
-  height: 1px
-  background: rgba(0,0,0,0.6)
-.clearfix:after 
-  clear: both
-  content: "."
-  display: block
-  height: 0
-  visibility: hidden
+.cancelbtn:hover, .cancelbtn:active {background: red;}
 
-.clearfix 
-  display: inline-block
+.logInbtn:hover, .logInbtn:active {background: #4CAF50;}
 
-.clearfix 
-  display: block
-.right
-  margin-left: 12.5vw
-  bottom: 0
-  position: absolute
-  float: right
-.right > p
-  font-size: 2vw
-  text-align: left
-  text-transform: none
-  font-family: Raleway
-  margin-top: 0.5vw
-  color: rgba(0,0,0,0.7)
-  &:last-child
-    margin-top: 0.2vw
-    font-size: 0.9vw
-    text-align: right
-    color: rgba(0,0,0,0.5)
-       
-.avatar:hover
-  > #camera 
-    > #cameraFrame
-      stroke-dashoffset: 0
-.avatar:hover
-  > #camera 
-    > #circle
-      stroke-dashoffset: 0px
-.avatar:hover
-  > #camera 
-    > #plus
-      stroke-dashoffset: 0px
-      
-.avatar:active
-  > #camera
-    > #cameraFrame
-      -webkit-transition: none
-      stroke: rgba(255,255,255,0.7)
+#loginheader {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  height: 35px;
+  margin: 0px;
+}
 
-.avatar:active
-  > #camera
-    > #circle
-      -webkit-transition: none
-      stroke: rgba(255,255,255,0.7)
+#clearfix {
+  margin: auto;
+  width: 250px;
+  height: 40px;
+}
 
-.avatar:active
-  > #camera
-    > #plus
-      -webkit-transition: none
-      stroke: rgba(255,255,255,0)
-.src
-  font-family: raleway
-  position: absolute
-  display: inline-block
-  right: 0
-  bottom: 0
-  padding: 10px
-#camera
-  -webkit-transition: 250ms cubic-bezier(.7,0,.36,1)
-  transition: 250ms cubic-bezier(.7,0,.36,1)
-.avatar.open
-  > #camera
-    -webkit-transform: scale(0)
-    fill: white
-.avatar.open
-  > #openModal
-    -webkit-transform: scale(0.95)
-.avatar.open
-  > #fileUpload
-    opacity: 1
-    -webkit-transition-delay: 250ms
-.avatar.open
-  > #camera
-    visibility: hidden
+#signincontain {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+#usrnm {
+  color: white;
+}
+
+.chkbx {
+  padding-right: 5px;
+}
+
+#logInemail {
+  height: 40px;
+  margin-top: 0px;
+}
+
+#logInPass {
+  height: 40px;
+  margin-top: 0px;
+}
+
+.psw3 {
+  width: 100px;
+  text-align: center;
+  color: white;
+  margin: auto;
+}
+
+#remember {
+  padding-left: 5px;
+  width: 150px;
+  color: white;
+}
+
+#pswspan {
+  padding-top: 15px;
+  width: 120px;
+  margin: auto;
+}
+
+#psswd {
+  color: white;
+}
+/* Extra styles for the cancel button */
+.cancelbtn {
+    /*padding: 14px 20px;*/
+    margin-right: 15px;
+    margin-top: 10px;
+    background: rgba(0, 0, 0, 0.4);
+    /*border-radius: 10px;*/
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,.signupbtn {
+    /*float: left;*/
+    width: 100px;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+
+
+/*REGISTER MODAL*/
+
+/*#id01 {
+  width: 500px;
+}
+*/
+
+#loginheader2 {
+  text-align: center;
+  font-size: 24px;
+  height: 35px;
+  margin: 0px;
+  color: white;
+  padding-bottom: 10px;
+}
+
+#requiredfields{
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  margin: auto;
+  padding-top: 15px;
+}
+
+#registerform {
+  width: 500px;
+  height: 675px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+}  
+
+#registercontainer {
+  width: 500px;
+  /*height: 600px;*/
+  margin: auto;
+}
+
+#resUsername {
+  height: 40px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top:0px;
+}
+
+#resEmail {
+  height: 40px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top:0px;
+}
+
+.rgstrfont {
+  color: white;
+}
+
+#resPass {
+  height: 40px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top:0px;
+}
+
+#resPassx3 {
+  height: 40px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top:0px;
+}
+
+#qualifiers {
+  border-style: solid;
+  border-color: black;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  height: 135px;
+}
+
+#remember2 {
+  padding-top: 15px;
+  padding-left: 5px;
+  width: 150px;
+  color: white;
+  margin: auto;
+  text-align: center;
+}
+
+#terms {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  width: 375px;
+}
+
+#clearfix2 {
+  margin: auto;
+  width: 250px;
+  height: 40px;
+}
+
+.cancelbtn:hover, .cancelbtn:active {background: red;}
+
+.signupbtn:hover, .signupbtn:active {background: #4CAF50;}
+
+/*GROUP CHAT MODAL*/
+
+#chatfield {
+  border-style: solid;
+  border-color: black;
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  height: 425px;
+}
+
+#modal3contain {
+  width: 650px;
+  height: 600px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+}
+
+#chatcontain {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+#chatheader {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  height: 35px;
+  margin: 0px;
+}
+
+#logInPass {
+  height: 40px;
+  margin-top: 0px;
+}
+
+#clearfix3 {
+  margin: auto;
+  width: 250px;
+  height: 40px;
+}
+
+/*INSTANT MESSAGE MODAL*/
+
+#mssgfield {
+  border-style: solid;
+  border-color: black;
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  height: 400px;
+}
+
+#modal4contain {
+  width: 350px;
+  height: 650px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+}
+
+#mssgcontain {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+#mssgheader {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  height: 35px;
+  margin: 0px;
+}
+
+#logInPass {
+  height: 40px;
+  margin-top: 0px;
+}
+
+#clearfix4 {
+  margin: auto;
+  width: 250px;
+  height: 40px;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    /*border: 1px*/ solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    color: #000;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.clearfix3::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+        width: 100%;
+    }
+}
