@@ -2,7 +2,6 @@
 <html>
 <title>Home | DevConnect</title>
 <meta charset="UTF-8">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
@@ -11,245 +10,327 @@
 
 
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
-    height: 100%;
-    color: #777;
-    line-height: 1.8;
-}
-
-.bgimg-1, {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* background image (Logo. Full height) */
-.bgimg-1 {
-    background-image: url('https://www.epafos.gr/images/photos/our-team.jpg');
-    min-height: 100%;
-}
-
-.w3-wide {letter-spacing: 10px;}
-.w3-hover-opacity {cursor: pointer;}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1920px) {
-    .bgimg-1, .bgimg-2, .bgimg-3 {
-        background-attachment: scroll;
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Lato", sans-serif;
     }
-}
+    
+    body,
+    html {
+        height: 100%;
+        color: #777;
+        line-height: 1.8;
+    }
+    
+    .bgimg-1,
+    {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    /* background image (Logo. Full height) */
+    
+    .bgimg-1 {
+        background-image: url('https://www.epafos.gr/images/photos/our-team.jpg');
+        min-height: 100%;
+    }
+    
+    .w3-wide {
+        letter-spacing: 10px;
+    }
+    
+    .w3-hover-opacity {
+        cursor: pointer;
+    }
+    /* Turn off parallax scrolling for tablets and phones */
+    
+    @media only screen and (max-device-width: 1920px) {
+        .bgimg-1,
+        .bgimg-2,
+        .bgimg-3 {
+            background-attachment: scroll;
+        }
+    }
 </style>
+
 <body>
 
-<!-- top navbar -->
-<div class="w3-top" id="totalNav">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="#home" class="w3-bar-item w3-button w3-hover-red"><i class="fa fa-home"></i>HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-hover-red"><i class="fa fa-book"></i> ABOUT</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-red"><i class="fa fa-envelope"></i> CONTACT</a>
-    <a href="#modal" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red"><i class="fa fa-user"></i> REGISTER</a>
-    <a  class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red logIn"><i class="fa fa-user"></i> LOGIN</a>
-  </div>
-
-  <!-- small navbar -->
-  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-black w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-  </div>
-</div>
-
-<!-- ------------------------------------ -->
-
-  <div class="container">
-      <div id="modal" class="popupContainer modal "  tabindex="-1" role="dialog" style="display:none;>
-        <header class="popupHeader">
-            <span class="header_title">Login</span>
-            <span class="modal_close"><i class="fa fa-times"></i></span>
-        </header>
-
-        <section class="popupBody">
-            
-            <div class="social_login">
-                <div class="">
-                    <a href="#" class="social_box fb">
-                        <span class="icon"><i class="fa fa-facebook"></i></span>
-                        <span class="icon_title">Connect with Facebook</span>
-
-                    </a>
-
-                    <a href="#" class="social_box google">
-                        <span class="icon"><i class="fa fa-google-plus"></i></span>
-                        <span class="icon_title">Connect with Google</span>
-                    </a>
-                </div>
-
-                <div class="centeredText">
-                    <span>Or use your Email address</span>
-                </div>
-
-                <div class="action_btns">
-                    <div class="one_half"><a href="#" id="login_form" class="btn">Login</a></div>
-                    <div class="one_half last"><a href="#" id="register_form" class="btn">Sign up</a></div>
-                </div>
-            </div>
-
-            <div class="user_login">
-                <form>
-                    <label>Username</label>
-                    <input type="text" />
-                    <br />
-
-                    <label>Password</label>
-                    <input type="password" />
-                    <br />
-
-                    <div class="checkbox">
-                        <input id="remember" type="checkbox" />
-                        <label for="remember">Remember me on this computer</label>
-                    </div>
-
-                    <div class="action_btns">
-                        <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
-                        <div class="one_half last"><a href="#" class="btn btn_red">Login</a></div>
-                    </div>
-                </form>
-
-                <a href="#" class="forgot_password">Forgot password?</a>
-            </div>
-
-            <div class="user_register">
-                <form>
-                    <label name="email">Email Address</label>
-                    <input type="email" />
-                    <br />
-
-                    <label name="username">Username</label>
-                    <input type="text" />
-                    <br />
-
-                    <label name="password">Password</label>
-                    <input type="password" />
-                    <br />
-
-                    <label name="password">Repeat Password</label>
-                    <input type="password" />
-                    <br />
-
-                    <div class="action_btns">
-                        <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
-                        <div class="one_half last"><a href="#" class="btn btn_red">Register</a></div>
-                    </div>
-                </form>
-            </div>
-        </section>
-    </div>
-</div>
-
-<!-- ------------------------------------ -->
-
-<!-- background image -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">DEVCONNECT</span>
-  </div>
-</div>
-
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT DEVCONNECT</h3>
-
-    <p class="paragraphs"><b>DEVCONNECT</b> helps students and new professionals in the coding fields to assist them with navigating the ever changing business environment that is the coding industry. Our mission is to engage, excite and enlighten students and new professionals to pursue careers in computer programming, language coding, and web development through mentoring and to support their continued advancement in the industry.
-    Our foundation is utilizing practicing professionals that volunteer to attract, recruit, and connect people to real professions. Who better to inspire a new generation of coders to start careers in an industry than the professionals currently shaping it?  <b>DEVCONNECT</b> uses working professionals to reach job seekers and assist them with finding the path to professional success in the coding and programming field.</p>
-
-    
-  <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <img src="assets/images/mentor.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
-    </div>
-
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-    <p class="paragraphs">A mentor is someone whose knowledge and experience the mentee respects and someone whose wisdom and know-how can support the professional growth and development of the mentee.  Often this is a boss, professor or other business leader who the mentee has already met, but sometimes a mentor can be someone who is not known to the mentee.  Mentors do not necessarily need to be the most senior person at an organization or within the field; the right mentor depends on what knowledge the mentee hopes to gain. In any field, having a professional mentor can help individuals develop and advance their careers. A strong mentoring relationship is built on collaboration and the commitment to the professional development of one or both of its participants. While in the typical mentoring relationship, one participant has more experience, skill, knowledge than the other, many strong mentoring relationships provide an opportunity for both parties to learn from each other through the development of a caring and respectful partnership.</p>
-    </div>
-  </div>
-</div>
-
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">CONTACT DEVCONNECT</h3>
-  
-
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom">
-        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Orange County, California<br>
-        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 555-555-5555<br>
-        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: info@devconnect.com<br>
-      </div>
-      <form action="/action_page.php" target="_blank">
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
-          </div>
+    <!-- top navbar -->
+    <div class="w3-top" id="totalNav">
+        <div class="w3-bar" id="myNavbar">
+            <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                <i class="fa fa-bars"></i>
+            </a>
+            <a href="#home" class="w3-bar-item w3-button w3-hover-red"><i class="fa fa-home"></i>HOME</a>
+            <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-hover-red"><i class="fa fa-book"></i> ABOUT</a>
+            <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-red"><i class="fa fa-envelope"></i> CONTACT</a>
+            <a href="#modal" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red" onclick="document.getElementById('id01').style.display='block'"><i class="fa fa-user"></i> REGISTER</a>
+            <a href="#modal" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red" onclick="document.getElementById('id02').style.display='block'"><i class="fa fa-user"></i> LOGIN</a>
         </div>
-        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
+
+        <!-- small navbar -->
+        <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
+            <a href="#about" class="w3-bar-item w3-black w3-button" onclick="toggleFunction()">ABOUT</a>
+            <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+        </div>
+    </div>
+
+    <!-- ------------------------------------ -->
+
+    <!-- REGISTER -->
+
+    <!-- The Modal (contains the Sign Up form) -->
+    <div id="id01" class="modal">
+        <!-- <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span> -->
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="container">
+
+                <label><b>Username</b></label>
+                <input id="resUsername" type="text" placeholder="Enter Username" name="username" required>
+
+                <label><b>Email</b></label>
+                <input id="resEmail" type="text" placeholder="Enter Email" name="email" required>
+
+                <label><b>Password</b></label>
+                <input id="resPass" type="password" placeholder="Enter Password" name="psw" required>
+
+                <label><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                <input type="checkbox" checked="checked"> Remember me
+                <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+                <label><b>Would you like to sign up as a Mentor, or Protege?</b></label></br>
+                <select id="resExp" name="mentorpro">
+  			<option  value="Protege">Mentor</option>
+ 		 	<option value="Mentor">Protege</option>
+		</select>
+                </br>
+                </br>
+                <label><b>What type of development are you most interested in?</b></label></br>
+                <select id="resIntr" name="frontbackend">
+  			<option value="Front_End">Front End</option>
+ 		 	<option value="Back_End">Back End</option>
+		</select>
+
+                <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+                <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <button type="button" id="signUp" class="signupbtn">Sign Up</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- ------------------------------------ -->
+
+    <!-- LOGIN -->
+
+    <div id="id02" class="modal">
+        <!-- <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span> -->
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="container">
+                <label><b>E-Mail</b></label>
+                <input type="text" placeholder="Enter Email" name="email" id="logInemail" required>
+
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" id="logInPass" required>
+
+                <div class="clearfix">
+                    <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                    <button type="submit" class="logInbtn">Sign In</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- ------------------------------------ -->
+
+    <!-- background image -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">DEVCONNECT</span>
+        </div>
+    </div>
+
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="w3-center">ABOUT DEVCONNECT</h3>
+
+        <p class="paragraphs"><b>DEVCONNECT</b> helps students and new professionals in the coding fields to assist them with navigating the ever changing business environment that is the coding industry. Our mission is to engage, excite and enlighten students and new professionals
+            to pursue careers in computer programming, language coding, and web development through mentoring and to support their continued advancement in the industry. Our foundation is utilizing practicing professionals that volunteer to attract, recruit,
+            and connect people to real professions. Who better to inspire a new generation of coders to start careers in an industry than the professionals currently shaping it? <b>DEVCONNECT</b> uses working professionals to reach job seekers and assist
+            them with finding the path to professional success in the coding and programming field.</p>
+
+
+        <div class="w3-row">
+            <div class="w3-col m6 w3-center w3-padding-large">
+                <img src="assets/images/mentor.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+            </div>
+
+            <div class="w3-col m6 w3-hide-small w3-padding-large">
+                <p class="paragraphs">A mentor is someone whose knowledge and experience the mentee respects and someone whose wisdom and know-how can support the professional growth and development of the mentee. Often this is a boss, professor or other business leader who
+                    the mentee has already met, but sometimes a mentor can be someone who is not known to the mentee. Mentors do not necessarily need to be the most senior person at an organization or within the field; the right mentor depends on what
+                    knowledge the mentee hopes to gain. In any field, having a professional mentor can help individuals develop and advance their careers. A strong mentoring relationship is built on collaboration and the commitment to the professional
+                    development of one or both of its participants. While in the typical mentoring relationship, one participant has more experience, skill, knowledge than the other, many strong mentoring relationships provide an opportunity for both
+                    parties to learn from each other through the development of a caring and respectful partnership.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+        <h3 class="w3-center">CONTACT DEVCONNECT</h3>
+
+
+        <div class="w3-row w3-padding-32 w3-section">
+            <div class="w3-col m8 w3-panel">
+                <div class="w3-large w3-margin-bottom">
+                    <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Orange County, California<br>
+                    <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 555-555-5555<br>
+                    <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: info@devconnect.com<br>
+                </div>
+                <form action="/action_page.php" target="_blank">
+                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                        </div>
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                        </div>
+                    </div>
+                    <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+                    <button class="w3-button w3-black w3-right w3-section" type="submit">
           <i class="fa fa-paper-plane"></i> SEND MESSAGE
         </button>
-      </form>
+                </form>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  </div>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">DEVCONNECT</a></p>
-</footer>
- 
-<!-- Add Google Maps -->
-<script>
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-black";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-black", "");
-    }
-}
+    <!-- Footer -->
+    <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+        <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+        <div class="w3-xlarge w3-section">
+            <i class="fa fa-facebook-official w3-hover-opacity"></i>
+            <i class="fa fa-instagram w3-hover-opacity"></i>
+            <i class="fa fa-snapchat w3-hover-opacity"></i>
+            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+            <i class="fa fa-twitter w3-hover-opacity"></i>
+            <i class="fa fa-linkedin w3-hover-opacity"></i>
+        </div>
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">DEVCONNECT</a></p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Add Google Maps -->
+    <script>
+        $(function() {
+            // Change style of navbar on scroll
+            window.onscroll = function() {
+                myFunction()
+            };
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
+            function myFunction() {
+                var navbar = document.getElementById("myNavbar");
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-black";
+                } else {
+                    navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-black", "");
+                }
+            }
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script type="text/javascript" src="assets/javascript/logres.js"></script>
-<!--
+            // Used to toggle the menu on small screens when clicking on the menu button
+            function toggleFunction() {
+                var x = document.getElementById("navDemo");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else {
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+
+
+
+
+            //AJAX
+            console.log($("#signUp"))
+            $("#signUp").on("click", function(event) {
+                console.log("eyy");
+                event.preventDefault();
+
+                var surveyResults = {
+                    username: $("#resUsername").val().trim(),
+                    email: $("#resEmail").val().trim(),
+                    password: $("#resPass").val().trim(),
+                    frontbackend: $("#resIntr").val().trim(),
+                    mentorpro: $("#resExp").val().trim()
+                }
+
+
+
+                $.post("/api/users/", surveyResults)
+                    .done(function(data) {
+                        console.log("yo")
+                        window.location.href = "/user/" + data.id;
+                    });
+
+
+            });
+
+            //Login Logic
+            $(".logInbtn").on("click", function(event) {
+                event.preventDefault();
+                var logIninfo = {
+                    email: $("#logInemail").val().trim(),
+                    password: $("#logInPass").val().trim()
+                }
+                console.log("lol")
+                $.post("/login", logIninfo)
+                    .done(function(data) {
+                        window.location.href = "/user/" + data.id;
+                    })
+
+            });
+
+        })
+    </script>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id01');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById('id02');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+
+
+
+    <!-- <script type="text/javascript" src="assets/javascript/logres.js"></script> -->
+    <!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 -->
 
 </body>
+
 </html>

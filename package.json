@@ -19,6 +19,7 @@
   "homepage": "https://github.com/bavely/proj#readme",
   "dependencies": {
     "body-parser": "^1.17.2",
+    "crypto": "0.0.3",
     "express": "^4.15.3",
     "express-handlebars": "^3.0.0",
     "method-override": "^2.3.9",
