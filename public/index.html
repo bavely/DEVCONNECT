@@ -277,35 +277,47 @@
 
 
 
-      //AJAX
-      console.log($("#signUp"))
-      $("#signUp").on("click", function (event) {
-        console.log("eyy");
-        event.preventDefault();
+//AJAX
+            console.log($("#signUp"))
+            $("#signUp").on("click", function(event) {
+                console.log("eyy");
+                event.preventDefault();
 
-        var surveyResults = {
-          username: $("#resUsername").val().trim(),
-          email: $("#resEmail").val().trim(),
-          password: $("#resPass").val().trim(),
-          frontbackend: $("#resExp").val().trim(),
-          mentorpro: $("#resIntr").val().trim()
-        }
-
-
-
-        $.post("/api/users", surveyResults, function (data) {
+               var surveyResults = {
+                    username: $("#resUsername").val().trim(),
+                    email: $("#resEmail").val().trim(),
+                    password: $("#resPass").val().trim(),
+                    frontbackend: $("#resIntr").val().trim(),
+                    mentorpro: $("#resExp").val().trim()
+                }
 
 
 
-          // $("#currentMatchName").html("<h1>" + data.name + "</h1>");
+               $.post("/api/users/", surveyResults)
+                    .done(function(data) {
+                        console.log("yo")
+                        window.location.href = "/user/" + data.id;
+                    });
 
-          // $("#currentMatchPhoto").html("<img src=" + data.picture + ">");
 
+           });
 
-        });
+           //Login Logic
+            $(".logInbtn").on("click", function(event) {
+                event.preventDefault();
+                var logIninfo = {
+                    email: $("#logInemail").val().trim(),
+                    password: $("#logInPass").val().trim()
+                }
+                console.log("lol")
+                $.post("/login", logIninfo)
+                    .done(function(data) {
+                        window.location.href = "/user/" + data.id;
+                    })
 
-      });
-    })
+           });
+
+       });
 
   </script>
 

@@ -4,8 +4,9 @@ var methodOverride = require("method-override");
 var path = require("path");
 var db = require("./models");
 var PORT = process.env.PORT || 8080;
-
 var app = express();
+var http = require('http').Server(app);
+var io = require('socket.io')(http);
 
 app.use(express.static("public"));
 
@@ -24,7 +25,7 @@ require("./routes/html-routes.js")(app);
 
 
 db.sequelize.sync().then(function() {
-  app.listen(PORT, function() {
+  http.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
   });
 });

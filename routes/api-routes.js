@@ -1,32 +1,46 @@
+var db = require("../models");
+var crypto = require("crypto");
+var Passsalthash = require("./passsalthash.js");
 
-var db = require("../models")
+module.exports = function(app) {
 
-
-module.exports = function(app){
-
-    // app.post("/api/newuser", function(req,res){
+    //Reg Route
+    app.post("/api/users/", function(req, res) {
         //Create new user 
-        // db.Answer.create({
-            //key value pair goes here
 
+        var newUser = {
+            username: req.body.username,
+            password: req.body.password,
+            photoUrl: req.body.photoUrl,
+            email: req.body.email,
+            frontbackend: req.body.frontbackend,
+            mentorpro: req.body.mentorpro,
+        }
 
-    //     }).then(function(result){
-    //         res.end();
-    //     })
-    // })
+        Passsalthash.register(newUser).then(function(result) {
+                console.log(result)
+                res.redirect("/users/" + result.id);
+
+            })
+            .catch(function(error) {
+                console.error(error);
+                res.json({ error: error.message });
+
+            })
+    })
 
     //Get all USERS info (Name,Location .etc)
-    app.get("/api/users", function(req,res){
+    app.get("/api/users", function(req, res) {
 
-        db.Answer.findAll({}).then(function(data){
-            console.log(data);
-           return res.json(data);
+        db.User.findAll({}).then(function(data) {
+                console.log(data);
+                return res.json(data);
 
-        })
-        //JSON of all users
-        
+            })
+            //JSON of all users
+
 
     })
-    
-    
+
+
 }
