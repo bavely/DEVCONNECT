@@ -19,8 +19,9 @@ module.exports = function(app) {
 
         Passsalthash.register(newUser).then(function(result) {
                 console.log(result)
-                res.redirect("/users/" + result.id);
-
+                    // res.redirect("/users/" + result.id);
+                    // res.render("users", result)
+                res.json(result);
             })
             .catch(function(error) {
                 console.error(error);
