@@ -1,0 +1,490 @@
+body {
+    background-image: url('../images/background2.jpg');
+    background-color: rgba(255,255,255,.5);
+    height: 100%;
+    width: 100%;
+
+}
+
+#totalNav {
+  background-color: rgba(0,0,0,.5);
+  text-decoration-color: black;
+}
+
+.w3-bar-item {
+  color: white;
+}
+
+.paragraphs {
+  text-align: justify;
+}
+
+#home {
+  width: 100%;
+}
+
+#about {
+  padding-bottom: 0px;
+}
+
+#profilemiddlecolumn {
+  height: 600px;
+}
+
+#success_message{ display: none;}
+
+#surveycontainer {
+  padding-top: 50px;
+  text-align: center;
+}
+
+#modal2contain {
+  width: 500px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+}
+
+#w3container {
+  margin-left: 25px;
+}
+
+.labelFont {
+  color: white;
+}
+
+.col-md-4 {
+  padding-bottom: 10px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    /*padding: 14px 20px;*/
+    /*margin: 8px 0;*/
+    margin-left: 15px;
+    margin top: 15px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    height: 40px;
+}
+
+.cancelbtn:hover, .cancelbtn:active {background: red;}
+
+.logInbtn:hover, .logInbtn:active {background: #4CAF50;}
+
+#loginheader {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  height: 35px;
+  margin: 0px;
+}
+
+#clearfix {
+  margin: auto;
+  width: 250px;
+  height: 40px;
+}
+
+#signincontain {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+#usrnm {
+  color: white;
+}
+
+.chkbx {
+  padding-right: 5px;
+}
+
+#logInemail {
+  height: 40px;
+  margin-top: 0px;
+}
+
+#logInPass {
+  height: 40px;
+  margin-top: 0px;
+}
+
+.psw3 {
+  width: 100px;
+  text-align: center;
+  color: white;
+  margin: auto;
+}
+
+#remember {
+  padding-left: 5px;
+  width: 150px;
+  color: white;
+}
+
+#pswspan {
+  padding-top: 15px;
+  width: 120px;
+  margin: auto;
+}
+
+#psswd {
+  color: white;
+}
+/* Extra styles for the cancel button */
+.cancelbtn {
+    /*padding: 14px 20px;*/
+    margin-right: 15px;
+    margin-top: 10px;
+    background: rgba(0, 0, 0, 0.4);
+    /*border-radius: 10px;*/
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,.signupbtn {
+    /*float: left;*/
+    width: 100px;
+}
+
+/* Add padding to container elements */
+.container {
+    padding: 16px;
+}
+
+#devconnect {
+  top: 45%;
+}
+
+/*REGISTER MODAL*/
+
+/*#id01 {
+  width: 500px;
+}
+*/
+
+#loginheader2 {
+  text-align: center;
+  font-size: 24px;
+  height: 35px;
+  margin: 0px;
+  color: white;
+  padding-bottom: 10px;
+}
+
+#requiredfields{
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  margin: auto;
+  padding-top: 15px;
+}
+
+#registerform {
+  width: 500px;
+  height: 675px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+}  
+
+#registercontainer {
+  width: 500px;
+  /*height: 600px;*/
+  margin: auto;
+}
+
+#resUsername {
+  height: 40px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top:0px;
+}
+
+#resEmail {
+  height: 40px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top:0px;
+}
+
+.rgstrfont {
+  color: white;
+}
+
+#resPass {
+  height: 40px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top:0px;
+}
+
+#resPassx3 {
+  height: 40px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-top:0px;
+}
+
+#qualifiers {
+  border-style: solid;
+  border-color: black;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  height: 135px;
+}
+
+#remember2 {
+  padding-top: 15px;
+  padding-left: 5px;
+  width: 150px;
+  color: white;
+  margin: auto;
+  text-align: center;
+}
+
+#terms {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  width: 375px;
+}
+
+#clearfix2 {
+  margin: auto;
+  width: 250px;
+  height: 40px;
+}
+
+/*Profile Box*/
+
+#leftcolumnrow {
+  text-align: center;
+}
+
+#profilebox {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+}
+
+#profilelabel {
+  color: white;
+}
+
+#userprofileimage {
+  border-style: solid;
+  border-color: white;
+  background-color: white;
+  width:125px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+}
+
+#uservitals {
+  border-style: solid;
+  border-color: white;
+  background-color: white;
+  border-radius: 25px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+}
+
+/*PROTEGE METOR REQUEST BOX*/
+
+#requestbox {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+}
+
+#promentlabel {
+  color: white;
+}
+
+#promentimage {
+  border-style: solid;
+  border-color: white;
+  background-color: white;
+  width:125px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 25px;
+}
+
+#promentrequester {
+  color: white;
+  text-align: center;
+  margin: auto;
+}
+
+#requestboxcontainer {
+  height: 300px;
+}
+
+#clearfix9 {
+  margin: auto;
+  width: 250px;
+  height: 40px;
+  color: white;
+}
+
+
+
+.cancelbtn:hover, .cancelbtn:active {background: red;}
+
+.signupbtn:hover, .signupbtn:active {background: #4CAF50;}
+
+/*GROUP CHAT MODAL*/
+
+#chatfield {
+  border-style: solid;
+  border-color: black;
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  height: 425px;
+}
+
+#modal3contain {
+  width: 650px;
+  height: 600px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+}
+
+#chatcontain {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+#chatheader {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  height: 35px;
+  margin: 0px;
+}
+
+#logInPass {
+  height: 40px;
+  margin-top: 0px;
+}
+
+#clearfix3 {
+  margin: auto;
+  width: 250px;
+  height: 40px;
+}
+
+/*INSTANT MESSAGE MODAL*/
+
+#mssgfield {
+  border-style: solid;
+  border-color: black;
+  background: rgba(255, 255, 255, 0.9);
+  text-align: center;
+  height: 300px;
+}
+
+#modal4contain {
+  width: 400px;
+  height: 550px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+}
+
+#mssgcontain {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+#mssgheader {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  height: 35px;
+  margin: 0px;
+}
+
+#logInPass {
+  height: 40px;
+  margin-top: 0px;
+}
+
+#clearfix4 {
+  margin: auto;
+  width: 250px;
+  height: 40px;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    /*border: 1px*/ solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    color: #000;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.clearfix3::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+        width: 100%;
+    }
+}
