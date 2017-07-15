@@ -46,8 +46,8 @@ io.on('connection', function(socket){
   console.log(socket.id);
 
   socket.on('chat message', function(msg){
-  	console.log(msg);
-    io.emit('chat message', socket.id + ": " + msg);
+  	var pieces = msg.split('^'); 	
+    io.emit('chat message', pieces[1] + ": " + pieces[0]);
   });
 
   socket.on('join', function(msg){
@@ -57,8 +57,8 @@ io.on('connection', function(socket){
 
   socket.on('direct message', function(msg){
   	var pieces = msg.split('^');
-  	io.to(userSocketMapping[pieces[1]]).emit('direct message', socket.id + ": " + pieces[0]);
-  	io.to(socket.id).emit('direct message', socket.id + ": " + pieces[0]);
+  	io.to(userSocketMapping[pieces[1]]).emit('direct message', pieces[2] + ": " + pieces[0]);
+  	io.to(socket.id).emit('direct message', pieces[2] + ": " + pieces[0]);
   });
 
   // socket.on('disconnect', function() {

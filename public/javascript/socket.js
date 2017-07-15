@@ -9,14 +9,14 @@
 
         $('#signUp').on("click", function(event){
           event.preventDefault();
-          socket.emit('chat message', $('#chatmessage').val());
+          socket.emit('chat message', $('#chatmessage').val() + "^" + val);
           $('#chatmessage').val('');
           return false;
         });
 
         $('#directsend').on("click", function(event){
           event.preventDefault();
-          socket.emit('direct message', $('#directmessage').val() + "^" + $('#mssgsearch').val());
+          socket.emit('direct message', $('#directmessage').val() + "^" + $('#mssgsearch').val() + "^" + val);
           $('#directmessage').val('');
           return false;
         });
