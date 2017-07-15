@@ -58,6 +58,7 @@ io.on('connection', function(socket){
   socket.on('direct message', function(msg){
   	var pieces = msg.split('^');
   	io.to(userSocketMapping[pieces[1]]).emit('direct message', socket.id + ": " + pieces[0]);
+  	io.to(socket.id).emit('direct message', socket.id + ": " + pieces[0]);
   });
 
   // socket.on('disconnect', function() {
