@@ -1,21 +1,3 @@
-<!DOCTYPE html>
-<html>
-<title>Home | DevConnect</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="assets/css/style.css" rel="stylesheet">
-
-
-<style>
-html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
-</style>
-<body>
 
 <!-- top navbar -->
 <div class="w3-top" id="totalNav">
@@ -56,9 +38,10 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
          <h4 class="w3-center">My Profile</h4>
          <p class="w3-center"><img src="{{photoUrl}}" style="height:106px;width:106px" alt="Avatar"></p>
          <hr>
-                  <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme" name="username"></i> {{username}}</p>
-         <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme" name="interest"></i> {{mentorpro}}</p>
-         <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme" name="interest"></i> {{frontbackend}}</p>
+         <p>{{username}}</p>
+         <p id="userEmail">{{email}}</p>
+         <p>{{mentorpro}}</p>
+         <p>{{frontbackend}}</p>
 <!--          <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme" name="city"></i> CITY</p>
          <p><i class="fa fa-home fa-fw w3-margin-right w3-text-theme" name="state"></i> STATE</p> -->
         </div>
@@ -67,7 +50,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
        <div class="w3-card-2 w3-round w3-white">
         <div class="w3-container">
           <p>MENTOR/PROTEGE Request</p>
-          <p class="w3-center"><img src="assets/images/profile.png" style="height:106px;width:106px" alt="Avatar"></p>
+          <p class="w3-center"><img src="https://cdn3.iconfinder.com/data/icons/rcons-user-action/32/boy-512.png" style="height:106px;width:106px" alt="Avatar"></p>
           <span>Jane Doe</span>
           <div class="w3-row w3-opacity">
             <div class="w3-half">
@@ -161,11 +144,11 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
         <!-- <div class="w3-col m12"> -->
         <div id="id03" class="modal">
           <!-- <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span> -->
-          <form class="modal-content animate" action="/action_page.php" id="modal3contain">
+          <div class="modal-content animate" id="modal3contain">
             <div class="container" id="chatcontain">
               <h2 id="chatheader">GROUP CHAT</h2>
               <div id="chatfield">
-                  
+                  <ul id="chatlist"></ul>
                 </div>
 
               <!-- <label id="usrnm"><b>Username</b></label> -->
@@ -178,7 +161,7 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
                 <button type="button" onclick="document.getElementById('id05').style.display='none'" class="cancelbtn">CANCEL</button>
               </div>
             </div>
-          </form>
+          </div>
         </div>
 
          <!--  <div class="w3-card-2 w3-round w3-white">
@@ -247,10 +230,10 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
               <!-- <label id="usrnm"><b>Username</b></label> -->
               <!-- <input type="text" placeholder="Enter Email" name="email" id="logInemail" required> -->
               <!-- <label id="psswd"><b>Password</b></label> -->
-            <input type="text" placeholder="Type a message" name="comment" id="chatmessage" required>
+            <input type="text" placeholder="Type a message" name="comment" id="directmessage" required>
 
           <div class="clearfix3" id="clearfix4">
-            <button type="button" id="signUp" class="signupbtn">SUBMIT</button>
+            <button type="button" id="directsend" class="signupbtn">SUBMIT</button>
             <button type="button" onclick="document.getElementById('id05').style.display='none'" class="cancelbtn">CANCEL</button>
         </div>
       </div>
@@ -319,48 +302,8 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Open Sans", sans-serif}
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">DEVCONNECT</a></p>
 </footer>
  
-<script>
-// Change style of navbar on scroll
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-black";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-black", "");
-    }
-}
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
-
-<script>
-    // Get the modal
-    var modal = document.getElementById('id03');
-
-    // When the user clicks anywhere outside of the modal, close it
-    window.onclick = function (event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
-
-  </script>
-
-<script type="text/javascript" src="assets/javascript/logres.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
 <!--
 To use this code on your website, get a free API key from Google.
 Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
 -->
-
-</body>
-</html>
